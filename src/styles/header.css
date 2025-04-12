@@ -18,12 +18,13 @@
     font-size: 50px;
 }
 
-.header-container > p{
+.header-container > p > a{
     color: #E2AA11;
     font-family: 'Poppins';
+    text-decoration: none;
 
 }
-.header-container > p:hover,.header-icon:hover{
+.header-container > p >a:hover,.header-icon:hover{
     color: white;
     cursor: pointer;
     text-decoration: underline;
