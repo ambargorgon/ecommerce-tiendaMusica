@@ -43,3 +43,23 @@
     color: rgb(197, 128, 0);
 }
 
+.item-button{
+    background-color: #e2aa1175;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.item-button:hover{
+    background-color: #e2aa11;
+    color: white;
+    transition: 0.3s;
+}
+.item-button> button{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}

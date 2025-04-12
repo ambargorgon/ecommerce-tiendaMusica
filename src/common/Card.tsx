@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/cards.css";
 import Transporte from "/img/camion.png";
 import { Instrumento } from "../types/instrumento";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 interface CardProps {
@@ -10,6 +10,13 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ item }) => {
+  const navigate = useNavigate();
+   
+  const handleLink = (id: number) => {
+    navigate(`/detalle/${id}`);
+  };
+
+
   return (
     <div className="card-container">
       <img src={item.imagen} alt={item.instrumento} />
@@ -30,7 +37,7 @@ const Card: React.FC<CardProps> = ({ item }) => {
         )}
         <p>{item.cantidadVendida} vendidos</p>
       </div>
-      <button className="item-button"><Link to={`detalle/${item.id}`}>Detalle</Link></button>
+      <button className="item-button" onClick={()=>handleLink(item.id)}>Detalle</button>
     </div>
   );
 };
