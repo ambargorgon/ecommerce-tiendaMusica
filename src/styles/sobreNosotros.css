@@ -1,0 +1,39 @@
+.sobre-nosotros-container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    align-self: center;
+    justify-self: center;
+}
+
+.nosotros-info{
+    width: 80%;
+    text-align: left;
+    display: flex;
+    gap: 50px;
+}
+.label{
+    font-size: 20px;
+    font-weight: 600;
+    color: #E2AA11;
+    margin-top: 20px;
+}
+.answer{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.presentacion{
+    border: 1px solid rgba(224, 224, 104, 0.452);
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width: 30%;
+}   
